@@ -1,0 +1,3 @@
+[package]
+edition = "2024.beta"
+name = "build_modules_and_scripts"

@@ -1,0 +1,14 @@
+[package]
+authors = ["Andrew Schran <aschran@mystenlabs.com>"]
+description = "Library for a Prometheus metric that computes its value by given closure at collection time"
+edition = "2021"
+license = "Apache-2.0"
+name = "prometheus-closure-metric"
+publish = false
+repository = "https://github.com/mystenlabs/mysten-infra"
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+prometheus.workspace = true
+protobuf.workspace = true

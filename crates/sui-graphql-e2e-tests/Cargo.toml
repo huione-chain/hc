@@ -1,0 +1,30 @@
+[package]
+authors = ["Mysten Labs <eng@mystenlabs.com>"]
+description = "End to end tests for Sui GraphQL"
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-graphql-e2e-tests"
+publish = false
+version = "0.1.0"
+
+[lints]
+workspace = true
+
+[dev-dependencies]
+datatest-stable.workspace = true
+sui-graphql-rpc.workspace = true
+sui-transactional-test-runner.workspace = true
+telemetry-subscribers.workspace = true
+tokio.workspace = true
+
+[[test]]
+harness = false
+name = "tests"
+
+[dependencies]
+
+[target.'cfg(msim)'.dependencies]
+msim.workspace = true
+
+[features]
+staging = ["sui-graphql-rpc/staging"]

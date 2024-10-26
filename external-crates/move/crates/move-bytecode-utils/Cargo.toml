@@ -1,0 +1,18 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Libraries for working with sets of Move bytecode modules"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "move-bytecode-utils"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+indexmap.workspace = true
+move-binary-format.workspace = true
+move-core-types.workspace = true
+petgraph.workspace = true
+serde-reflection.workspace = true

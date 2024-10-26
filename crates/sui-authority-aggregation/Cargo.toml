@@ -1,0 +1,14 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-authority-aggregation"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+futures.workspace = true
+mysten-metrics.workspace = true
+sui-types.workspace = true
+tokio.workspace = true
+tracing.workspace = true

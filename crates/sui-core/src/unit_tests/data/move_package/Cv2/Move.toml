@@ -1,0 +1,8 @@
+[package]
+edition = "2024.beta"
+name = "C"
+published-at = "0xc2"
+version = "0.0.2"
+
+[addresses]
+c = "0xc1"

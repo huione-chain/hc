@@ -1,0 +1,24 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-protocol-config"
+publish = false
+version = "0.1.0"
+
+[lints]
+workspace = true
+
+[dependencies]
+clap.workspace = true
+insta.workspace = true
+move-vm-config.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde-env.workspace = true
+serde_with.workspace = true
+sui-protocol-config-macros.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+insta.workspace = true

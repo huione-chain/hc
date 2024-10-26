@@ -1,0 +1,7 @@
+[package]
+edition = "2024.beta"
+name = "base"
+version = "0.0.1"
+
+[addresses]
+base = "0x0"

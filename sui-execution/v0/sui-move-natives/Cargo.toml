@@ -1,0 +1,27 @@
+[package]
+authors = ["Mysten Labs <eng@mystenlabs.com>"]
+description = "Move framework for sui platform"
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-move-natives-v0"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+bcs.workspace = true
+better_any.workspace = true
+linked-hash-map = "0.5.6"
+smallvec.workspace = true
+
+fastcrypto.workspace = true
+fastcrypto-zkp.workspace = true
+move-binary-format.workspace = true
+move-core-types.workspace = true
+move-vm-types.workspace = true
+
+move-stdlib-natives = { path = "../../../external-crates/move/move-execution/v0/crates/move-stdlib-natives", package = "move-stdlib-natives-v0" }
+move-vm-runtime = { path = "../../../external-crates/move/move-execution/v0/crates/move-vm-runtime", package = "move-vm-runtime-v0" }
+
+sui-protocol-config.workspace = true
+sui-types.workspace = true
+tracing.workspace = true

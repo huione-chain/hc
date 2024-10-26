@@ -1,0 +1,21 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "mysten-common"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+fastcrypto.workspace = true
+futures.workspace = true
+mysten-metrics.workspace = true
+parking_lot.workspace = true
+prometheus.workspace = true
+reqwest.workspace = true
+snap.workspace = true
+sui-tls.workspace = true
+sui-types.workspace = true
+tokio.workspace = true
+tracing.workspace = true

@@ -1,0 +1,18 @@
+[package]
+authors = ["Mysten Labs <eng@mystenlabs.com>"]
+description = "Transactional tests for Sui Adapter"
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-adapter-transactional-tests"
+publish = false
+version = "0.1.0"
+
+[dev-dependencies]
+datatest-stable.workspace = true
+sui-transactional-test-runner.workspace = true
+
+[[test]]
+harness = false
+name = "tests"
+
+[dependencies]

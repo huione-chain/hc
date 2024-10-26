@@ -1,0 +1,37 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-oracle"
+publish = false
+version.workspace = true
+
+[dependencies]
+anyhow = { version = "1.0.64", features = ["backtrace"] }
+bcs.workspace = true
+chrono.workspace = true
+clap.workspace = true
+jsonpath_lib = "0.3.0"
+once_cell.workspace = true
+prometheus = "0.13.3"
+reqwest.workspace = true
+serde = { version = "1.0.144", features = ["derive", "rc"] }
+serde_json = { version = "1.0.1" }
+tap.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tracing = "0.1.36"
+
+mysten-metrics = { path = "../mysten-metrics" }
+sui-config = { path = "../sui-config" }
+sui-json-rpc-types = { path = "../sui-json-rpc-types" }
+sui-sdk = { path = "../sui-sdk" }
+sui-types = { path = "../sui-types" }
+telemetry-subscribers.workspace = true
+
+[dev-dependencies]
+bcs = "0.1.5"
+dirs = "4.0.0"
+rand = "0.8.5"
+shared-crypto = { path = "../shared-crypto" }
+sui-keys = { path = "../sui-keys" }
+sui-move-build = { path = "../sui-move-build" }

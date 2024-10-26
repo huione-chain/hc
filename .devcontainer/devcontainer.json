@@ -1,0 +1,48 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/rust
+{
+    "name": "Rust",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "rust:1.82.0-bookworm",
+    // Use 'mounts' to make the cargo cache persistent in a Docker Volume.
+    "mounts": [
+        {
+            "source": "/var/run/docker.sock",
+            "target": "/var/run/docker.sock",
+            "type": "bind"
+        }
+    ],
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vadimcn.vscode-lldb",
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml",
+                "fill-labs.dependi",
+                "mhutchie.git-graph",
+                "ms-azuretools.vscode-docker",
+                "donjayamanne.githistory"
+            ],
+            "settings": {
+                "files.watcherExclude": {
+                    "**/target/**": true
+                },
+                "lldb.cargo": "/usr/local/cargo/bin/cargo"
+            }
+        }
+    },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    "capAdd": [
+        "SYS_PTRACE"
+    ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "bash .devcontainer/post_create.sh",
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+    "runArgs": [
+        "--cpus=13"
+    ]
+}

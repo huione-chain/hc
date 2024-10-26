@@ -1,0 +1,16 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-macros"
+publish = false
+version = "0.7.0"
+
+[lints]
+workspace = true
+
+[dependencies]
+futures.workspace = true
+once_cell.workspace = true
+sui-proc-macros.workspace = true
+tracing.workspace = true

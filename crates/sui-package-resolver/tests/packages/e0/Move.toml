@@ -1,0 +1,12 @@
+[package]
+edition = "2024.beta"
+name = "E"
+published-at = "0xe0"
+version = "0.0.1"
+
+[dependencies]
+StdLib = { local = "../std" }
+Sui = { local = "../sui" }
+
+[addresses]
+e = "0xe0"

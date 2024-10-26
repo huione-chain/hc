@@ -1,0 +1,10 @@
+[package]
+edition = "legacy"
+name = "ModIdentUniform"
+
+[dependencies]
+MoveStdlib = { local = "../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
+
+[addresses]
+ConflicitingAddress = "0xCAFE"
+ModIdentUniform = "0xCAFE"

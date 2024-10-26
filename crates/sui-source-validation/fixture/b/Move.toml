@@ -1,0 +1,7 @@
+[package]
+name = "b"
+published-at = "$STORAGE_ID"
+version = "0.0.1"
+
+[addresses]
+b = "$RUNTIME_ID"

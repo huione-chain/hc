@@ -1,0 +1,21 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-graphql-rpc-client"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+async-graphql = { workspace = true, features = [
+  "apollo_tracing",
+  "dataloader",
+  "opentelemetry",
+  "tracing",
+] }
+axum.workspace = true
+hyper.workspace = true
+reqwest.workspace = true
+serde_json.workspace = true
+sui-graphql-rpc-headers.workspace = true
+thiserror.workspace = true

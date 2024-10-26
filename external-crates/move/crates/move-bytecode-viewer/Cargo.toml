@@ -1,0 +1,22 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Explore Move bytecode and how the source code compiles to it"
+edition = "2021"
+license = "Apache-2.0"
+name = "move-bytecode-viewer"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+crossterm.workspace = true
+regex.workspace = true
+tui.workspace = true
+
+move-binary-format.workspace = true
+move-bytecode-source-map.workspace = true
+move-disassembler.workspace = true
+
+[features]
+default = []

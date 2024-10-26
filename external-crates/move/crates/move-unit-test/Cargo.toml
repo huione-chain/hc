@@ -1,0 +1,53 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Unit testing framework for Move code"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "move-unit-test"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+better_any.workspace = true
+clap.workspace = true
+codespan-reporting.workspace = true
+colored.workspace = true
+itertools.workspace = true
+once_cell.workspace = true
+rayon.workspace = true
+regex.workspace = true
+
+bcs.workspace = true
+move-binary-format.workspace = true
+move-bytecode-utils.workspace = true
+move-command-line-common.workspace = true
+move-compiler.workspace = true
+move-core-types.workspace = true
+move-ir-types.workspace = true
+move-model.workspace = true
+move-stdlib = { workspace = true, features = ["testing"] }
+move-stdlib-natives = { workspace = true, features = ["testing"] }
+move-symbol-pool.workspace = true
+move-vm-profiler.workspace = true
+move-vm-runtime = { workspace = true, features = ["testing"] }
+move-vm-test-utils.workspace = true
+move-vm-types.workspace = true
+rand.workspace = true
+
+[dev-dependencies]
+datatest-stable.workspace = true
+difference.workspace = true
+
+[[bin]]
+name = "move-unit-test"
+path = "src/main.rs"
+
+[[test]]
+harness = false
+name = "move_unit_test_testsuite"
+
+[features]
+gas-profiler = []

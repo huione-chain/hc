@@ -1,0 +1,8 @@
+[package]
+edition = "2024.beta"
+name = "Invalid"
+published-at = "mystery"
+version = "0.0.1"
+
+[addresses]
+invalid = "0x0"

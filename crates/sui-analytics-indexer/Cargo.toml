@@ -1,0 +1,62 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-analytics-indexer"
+publish = false
+version.workspace = true
+
+
+[dependencies]
+anyhow.workspace = true
+arrow.workspace = true
+arrow-array.workspace = true
+async-trait.workspace = true
+axum.workspace = true
+bcs.workspace = true
+byteorder.workspace = true
+bytes.workspace = true
+chrono.workspace = true
+clap.workspace = true
+csv.workspace = true
+eyre.workspace = true
+fastcrypto = { workspace = true, features = ["copy_key"] }
+gcp-bigquery-client = "0.18.0"
+move-binary-format.workspace = true
+move-bytecode-utils.workspace = true
+move-core-types.workspace = true
+mysten-metrics.workspace = true
+num_enum.workspace = true
+object_store.workspace = true
+parquet.workspace = true
+prometheus.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+simulacrum.workspace = true
+snowflake-api.workspace = true
+strum.workspace = true
+strum_macros.workspace = true
+sui-analytics-indexer-derive.workspace = true
+sui-config.workspace = true
+sui-data-ingestion-core.workspace = true
+sui-indexer.workspace = true
+sui-json-rpc-types.workspace = true
+sui-package-resolver.workspace = true
+sui-rest-api.workspace = true
+sui-storage.workspace = true
+sui-types.workspace = true
+tap.workspace = true
+telemetry-subscribers.workspace = true
+tempfile.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tokio-stream.workspace = true
+tracing.workspace = true
+typed-store.workspace = true
+url.workspace = true
+
+[dev-dependencies]
+
+[[bin]]
+name = "sui-analytics-indexer"
+path = "src/main.rs"

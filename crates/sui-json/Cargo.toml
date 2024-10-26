@@ -1,0 +1,27 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-json"
+publish = false
+version = "0.0.0"
+
+[dependencies]
+anyhow.workspace = true
+bcs.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+sui-types.workspace = true
+
+fastcrypto = { workspace = true }
+move-binary-format.workspace = true
+move-bytecode-utils.workspace = true
+move-core-types.workspace = true
+
+[dev-dependencies]
+sui-framework.workspace = true
+sui-move-build.workspace = true
+sui-types = { workspace = true, features = ["test-utils"] }
+test-fuzz.workspace = true

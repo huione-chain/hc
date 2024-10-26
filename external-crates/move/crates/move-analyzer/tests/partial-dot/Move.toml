@@ -1,0 +1,9 @@
+[package]
+edition = "legacy"
+name = "PartialDot"
+
+[dependencies]
+MoveStdlib = { local = "../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
+
+[addresses]
+PartialDot = "0xCAFE"

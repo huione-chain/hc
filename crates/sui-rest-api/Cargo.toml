@@ -1,0 +1,36 @@
+[package]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-rest-api"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+axum = { workspace = true, features = ["matched-path"] }
+bcs.workspace = true
+itertools.workspace = true
+mime = "0.3.17"
+openapiv3 = { git = "https://github.com/bmwill/openapiv3.git", rev = "ca4b4845b7c159a39f5c68ad8f7f76cb6f4d6963" }
+prometheus.workspace = true
+rand.workspace = true
+reqwest.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+serde_yaml.workspace = true
+sui-sdk2.workspace = true
+tap.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+url.workspace = true
+
+fastcrypto.workspace = true
+mysten-network.workspace = true
+sui-protocol-config.workspace = true
+sui-types.workspace = true
+
+[dev-dependencies]
+diffy = "0.3"

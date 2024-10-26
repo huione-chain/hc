@@ -1,0 +1,18 @@
+[package]
+authors = ["Ade A. <ade@mystenlabs.com>"]
+description = "macros for the typed-store crate"
+edition = "2021"
+license = "Apache-2.0"
+name = "typed-store-derive"
+publish = false
+repository = "https://github.com/mystenlabs/mysten-infra"
+version = "0.3.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+itertools.workspace = true
+proc-macro2.workspace = true
+quote.workspace = true
+syn.workspace = true

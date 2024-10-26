@@ -1,0 +1,40 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-json-rpc-types"
+publish = false
+version = "0.0.0"
+
+[dependencies]
+anyhow.workspace = true
+bcs.workspace = true
+colored.workspace = true
+enum_dispatch.workspace = true
+fastcrypto.workspace = true
+itertools.workspace = true
+json_to_table.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_with.workspace = true
+sui-enum-compat-util.workspace = true
+sui-macros.workspace = true
+sui-protocol-config.workspace = true
+tabled.workspace = true
+tracing.workspace = true
+
+move-binary-format.workspace = true
+move-bytecode-utils.workspace = true
+move-core-types.workspace = true
+
+mysten-metrics.workspace = true
+sui-json.workspace = true
+sui-package-resolver.workspace = true
+sui-types.workspace = true
+
+[dev-dependencies]
+sui-types = { workspace = true, features = ["test-utils"] }
+
+[features]
+test-utils = []

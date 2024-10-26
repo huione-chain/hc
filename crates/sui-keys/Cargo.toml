@@ -1,0 +1,24 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-keys"
+publish = false
+version = "0.0.0"
+
+[dependencies]
+anyhow.workspace = true
+bip32.workspace = true
+fastcrypto = { workspace = true, features = ["copy_key"] }
+rand.workspace = true
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+shared-crypto.workspace = true
+signature.workspace = true
+slip10_ed25519.workspace = true
+sui-types.workspace = true
+tiny-bip39.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

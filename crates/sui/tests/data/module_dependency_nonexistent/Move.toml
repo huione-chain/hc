@@ -1,0 +1,8 @@
+[package]
+edition = "2024.beta"
+name = "Nonexistent"
+published-at = "0xabc123"
+version = "0.0.1"
+
+[addresses]
+nonexistent = "0x0"

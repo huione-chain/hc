@@ -1,0 +1,36 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-surfer"
+publish = false
+version.workspace = true
+
+[dependencies]
+sui-core.workspace = true
+sui-json-rpc-types.workspace = true
+sui-move-build.workspace = true
+sui-protocol-config.workspace = true
+sui-swarm-config.workspace = true
+sui-types.workspace = true
+test-cluster.workspace = true
+
+async-trait.workspace = true
+bcs.workspace = true
+clap.workspace = true
+futures.workspace = true
+indexmap.workspace = true
+rand.workspace = true
+tokio = { workspace = true, features = ["full", "test-util", "tracing"] }
+tracing.workspace = true
+
+move-binary-format.workspace = true
+move-core-types.workspace = true
+telemetry-subscribers.workspace = true
+
+[dev-dependencies]
+prometheus.workspace = true
+sui-macros.workspace = true
+sui-simulator.workspace = true
+
+move-package.workspace = true

@@ -1,0 +1,27 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-security-watchdog"
+publish = false
+version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+arrow-array.workspace = true
+async-trait.workspace = true
+chrono.workspace = true
+clap.workspace = true
+env_logger = "0.11.3"
+lexical-util = "0.8.5"
+mysten-metrics.workspace = true
+prometheus.workspace = true
+reqwest = { workspace = true, features = ["json"] }
+serde.workspace = true
+serde_json.workspace = true
+snowflake-api.workspace = true
+telemetry-subscribers.workspace = true
+tokio.workspace = true
+tokio-cron-scheduler = "0.10.0"
+tracing.workspace = true
+uuid.workspace = true

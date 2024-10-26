@@ -1,0 +1,32 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-simulator"
+publish = false
+version = "0.7.0"
+
+[lints]
+workspace = true
+
+[dependencies]
+move-package.workspace = true
+
+anemo.workspace = true
+anemo-tower.workspace = true
+bcs.workspace = true
+fastcrypto = { workspace = true, features = ["copy_key"] }
+lru.workspace = true
+narwhal-network.workspace = true
+rand.workspace = true
+serde.workspace = true
+sui-framework.workspace = true
+sui-move-build.workspace = true
+sui-types.workspace = true
+telemetry-subscribers.workspace = true
+tempfile.workspace = true
+tower.workspace = true
+tracing.workspace = true
+
+[target.'cfg(msim)'.dependencies]
+msim.workspace = true

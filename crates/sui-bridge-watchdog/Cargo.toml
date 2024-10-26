@@ -1,0 +1,18 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-bridge-watchdog"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+ethers = { version = "2.0" }
+futures.workspace = true
+mysten-metrics.workspace = true
+prometheus.workspace = true
+sui-bridge.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tracing.workspace = true

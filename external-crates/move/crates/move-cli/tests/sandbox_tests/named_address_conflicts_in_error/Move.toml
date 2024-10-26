@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "use_named_address"
+
+[addresses]
+a = "0x42"
+
+[dependencies]
+Dep = { local = "dep", addr_subst = { "b" = "a" } }

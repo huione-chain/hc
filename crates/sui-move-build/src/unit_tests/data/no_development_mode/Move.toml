@@ -1,0 +1,3 @@
+[package]
+edition = "development"
+name = "no_development_mode"

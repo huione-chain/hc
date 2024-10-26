@@ -1,0 +1,21 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Diem ir to bytecode syntax"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "move-ir-to-bytecode-syntax"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+hex.workspace = true
+move-command-line-common.workspace = true
+move-core-types.workspace = true
+move-ir-types.workspace = true
+move-symbol-pool.workspace = true
+
+[features]
+default = []

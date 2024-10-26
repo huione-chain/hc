@@ -1,0 +1,13 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "move-prover-test-utils"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+move-command-line-common.workspace = true
+prettydiff.workspace = true
+regex.workspace = true

@@ -1,0 +1,6 @@
+[package]
+edition = "2024.beta"
+name = "Dep"
+
+[addresses]
+a = "0x41"

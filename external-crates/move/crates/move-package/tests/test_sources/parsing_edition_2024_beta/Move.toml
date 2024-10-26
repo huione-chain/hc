@@ -1,0 +1,5 @@
+[package]
+authors = ["some author"]
+edition = "2024.beta"
+license = "license"
+name = "name"

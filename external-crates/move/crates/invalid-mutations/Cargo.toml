@@ -1,0 +1,18 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Diem invalid mutations"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "invalid-mutations"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+[dependencies]
+move-binary-format.workspace = true
+move-core-types.workspace = true
+proptest.workspace = true
+
+[features]
+default = []

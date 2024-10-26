@@ -1,0 +1,20 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Diem serializer tests"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "serializer-tests"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+[dev-dependencies]
+move-binary-format = { workspace = true, features = ["fuzzing"] }
+proptest.workspace = true
+proptest-derive.workspace = true
+
+[features]
+fuzzing = ["move-binary-format/fuzzing"]
+
+[dependencies]

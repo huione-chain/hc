@@ -1,0 +1,26 @@
+authors = ["some author"]
+license = "license"
+name = "name"
+
+[addresses]
+C = "0x1"
+CoreAddr = "0x1"
+OtherD = "_"
+std = "_"
+
+[dev-addresses]
+DevCoreAddr = "0x1"
+DevStd = "0x2"
+
+[build]
+language_version = "0.0.0"
+
+[dependencies]
+A = { local = "../a" }
+B = { local = "../b", addr_subst = { "a" = "0xDEADBEEF" } }
+C = { local = "../some_path", addr_subst = { "a" = "0xCAFE", d = "0x4" } }
+D = { local = "../some_path", addr_subst = { "a" = "0xCAFE", C = "B" } }
+E = { local = "../some_path", addr_subst = { "a" = "0xCAFE", C = "B", "OtherD" = "d" } }
+
+[dev-dependencies]
+F = { local = "../some_path", addr_subst = { "a" = "0xCAFE" } }

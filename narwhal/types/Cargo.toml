@@ -1,0 +1,64 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "narwhal-types"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+base64.workspace = true
+bcs.workspace = true
+bytes.workspace = true
+derive_builder.workspace = true
+enum_dispatch.workspace = true
+futures.workspace = true
+indexmap.workspace = true
+mockall.workspace = true
+prometheus.workspace = true
+proptest.workspace = true
+proptest-derive.workspace = true
+prost.workspace = true
+rand.workspace = true
+roaring.workspace = true
+serde.workspace = true
+serde_with.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["macros", "rt", "sync"] }
+tonic.workspace = true
+tracing.workspace = true
+
+anemo.workspace = true
+anyhow.workspace = true
+config = { path = "../config", package = "narwhal-config" }
+crypto = { path = "../crypto", package = "narwhal-crypto" }
+fastcrypto.workspace = true
+once_cell.workspace = true
+sui-protocol-config.workspace = true
+
+mysten-common.workspace = true
+mysten-metrics.workspace = true
+mysten-network.workspace = true
+mysten-util-mem.workspace = true
+store = { path = "../../crates/typed-store", package = "typed-store" }
+
+[dev-dependencies]
+criterion.workspace = true
+serde_test.workspace = true
+test-utils = { path = "../test-utils", package = "narwhal-test-utils" }
+
+[build-dependencies]
+anemo-build.workspace = true
+tonic-build.workspace = true
+
+[features]
+default = []
+test = []
+
+[[bench]]
+harness = false
+name = "batch_digest"
+
+[[bench]]
+harness = false
+name = "verify_certificate"

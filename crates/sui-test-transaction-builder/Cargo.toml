@@ -1,0 +1,18 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-test-transaction-builder"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+bcs.workspace = true
+
+shared-crypto.workspace = true
+sui-genesis-builder.workspace = true
+sui-move-build.workspace = true
+sui-sdk.workspace = true
+sui-types.workspace = true
+
+move-core-types.workspace = true

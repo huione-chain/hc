@@ -1,0 +1,8 @@
+[package]
+edition = "2024.beta"
+name = "StdLib"
+published-at = "0x1"
+version = "0.0.1"
+
+[addresses]
+std = "0x1"

@@ -1,0 +1,5 @@
+[package]
+authors = ["some author"]
+flavor = "vanilla"
+license = "license"
+name = "name"

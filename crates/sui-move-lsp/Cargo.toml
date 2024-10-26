@@ -1,0 +1,14 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-move-lsp"
+publish = false
+version.workspace = true
+
+[dependencies]
+clap = { version = "4.1.4", features = ["derive"] }
+tokio = { workspace = true, features = ["full"] }
+
+bin-version.workspace = true
+move-analyzer.workspace = true

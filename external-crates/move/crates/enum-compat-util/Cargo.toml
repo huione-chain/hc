@@ -1,0 +1,10 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "enum-compat-util"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+serde_yaml.workspace = true

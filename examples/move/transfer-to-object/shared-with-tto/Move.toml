@@ -1,0 +1,11 @@
+[package]
+edition = "2024.beta"
+name = "shared-with-tto"
+version = "0.0.1"
+
+[dependencies]
+Sui = { local = "../../../../crates/sui-framework/packages/sui-framework" }
+common = { local = "../common" }
+
+[addresses]
+shared_with_tto = "0x0"

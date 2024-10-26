@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "print_stack_trace"
+
+[addresses]
+std = "0x1"
+
+[dependencies]
+MoveStdlib = { local = "../../../../move-stdlib" }

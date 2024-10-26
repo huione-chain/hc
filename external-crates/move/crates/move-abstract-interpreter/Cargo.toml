@@ -1,0 +1,18 @@
+[package]
+authors = ["The Move Contributors"]
+description = "Move abstract interpreter"
+edition = "2021"
+license = "Apache-2.0"
+name = "move-abstract-interpreter"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+move-binary-format.workspace = true
+move-bytecode-verifier-meter.workspace = true
+
+[dev-dependencies]
+itertools.workspace = true
+
+[features]
+default = []

@@ -1,0 +1,13 @@
+[package]
+edition = "2024.beta"
+name = "StandaloneModule"
+
+[addresses]
+A = "_"
+
+[dev-addresses]
+A = "0x2"
+std = "0x1"
+
+[dev-dependencies]
+MoveStdlib = { local = "../../../../move-stdlib" }

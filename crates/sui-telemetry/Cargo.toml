@@ -1,0 +1,14 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-telemetry"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+reqwest.workspace = true
+serde.workspace = true
+tracing.workspace = true
+
+sui-core.workspace = true

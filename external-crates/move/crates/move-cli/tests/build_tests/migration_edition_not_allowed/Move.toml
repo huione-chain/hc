@@ -1,0 +1,6 @@
+[package]
+edition = "2024.migration"
+name = "A"
+
+[addresses]
+A = "0x1"
