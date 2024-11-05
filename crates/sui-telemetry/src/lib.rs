@@ -10,9 +10,9 @@ use std::{
 use sui_core::authority::AuthorityState;
 use tracing::trace;
 
-pub(crate) const GA_API_SECRET: &str = "zeq-aYEzS0aGdRJ8kNZTEg";
+pub(crate) const GA_API_SECRET: &str = "y9C4l26jSVugXrSLcYOhAw";
 pub(crate) const GA_EVENT_NAME: &str = "node_telemetry_event";
-pub(crate) const GA_MEASUREMENT_ID: &str = "G-96DM59YK2F";
+pub(crate) const GA_MEASUREMENT_ID: &str = "G-88K1T5Q3FJ";
 pub(crate) const GA_URL: &str = "https://www.google-analytics.com/mp/collect";
 // need this hardcoded client ID as only existing client is valid.
 // see below for details:
