@@ -881,6 +881,11 @@ async fn genesis(
     network_config.save(&network_path)?;
     info!("Network config file is stored in {:?}.", network_path);
 
+    println!(
+        "Successfully verified and signed genesis checkpoint: {}",
+        network_config.genesis.checkpoint().digest()
+    );
+
     info!("Client keystore is stored in {:?}.", keystore_path);
 
     let fullnode_config = FullnodeConfigBuilder::new()
