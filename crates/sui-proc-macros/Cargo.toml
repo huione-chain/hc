@@ -1,0 +1,22 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-proc-macros"
+publish = false
+version = "0.7.0"
+
+[lints]
+workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2.workspace = true
+quote.workspace = true
+sui-enum-compat-util.workspace = true
+syn = { version = "2", features = ["extra-traits", "fold", "full"] }
+
+[target.'cfg(msim)'.dependencies]
+msim-macros.workspace = true

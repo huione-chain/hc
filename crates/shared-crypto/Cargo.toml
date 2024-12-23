@@ -1,0 +1,14 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "shared-crypto"
+publish = false
+version = "0.0.0"
+
+[dependencies]
+bcs.workspace = true
+eyre.workspace = true
+fastcrypto = { workspace = true, features = ["copy_key"] }
+serde.workspace = true
+serde_repr.workspace = true

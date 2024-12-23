@@ -1,0 +1,27 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+description = "Move VM Test Utils"
+edition = "2021"
+homepage = "https://diem.com"
+license = "Apache-2.0"
+name = "move-vm-test-utils"
+publish = false
+repository = "https://github.com/diem/diem"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow.workspace = true
+once_cell.workspace = true
+serde = { workspace = true, features = ["derive", "rc"] }
+
+move-binary-format.workspace = true
+move-core-types.workspace = true
+move-vm-profiler.workspace = true
+move-vm-types.workspace = true
+
+[features]
+default = []
+gas-profiler = []
+tiered-gas = []

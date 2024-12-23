@@ -1,0 +1,15 @@
+[package]
+authors = ["Diem Association <opensource@diem.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "move-vm-config"
+publish = false
+repository = "https://github.com/move-language/move"
+version = "0.1.0"
+
+[dependencies]
+move-binary-format.workspace = true
+once_cell.workspace = true
+
+[features]
+gas-profiler = []

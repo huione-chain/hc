@@ -1,0 +1,11 @@
+[package]
+edition = "development"
+name = "PackageBasics"
+
+[addresses]
+A = "0x1"
+B = "0x1"
+std = "0x1"
+
+[dependencies]
+MoveStdlib = { local = "../../../../move-stdlib" }

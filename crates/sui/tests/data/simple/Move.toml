@@ -1,0 +1,8 @@
+[package]
+edition = "2024.beta"
+name = "simple"
+
+[dependencies]
+
+[addresses]
+simple = "0x0"

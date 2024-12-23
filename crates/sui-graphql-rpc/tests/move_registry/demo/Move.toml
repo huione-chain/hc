@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "demo"
+
+[dependencies]
+Sui = { local = "../../../../sui-framework/packages/sui-framework" }
+
+[addresses]
+demo = "0x0"

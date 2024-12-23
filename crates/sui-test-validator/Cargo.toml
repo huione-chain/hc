@@ -1,0 +1,9 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-test-validator"
+publish = false
+version.workspace = true
+
+[dependencies]

@@ -1,0 +1,11 @@
+[package]
+edition = "development"
+name = "B"
+published-at = "0xb0"
+version = "0.0.1"
+
+[dependencies]
+A = { local = "../a0" }
+
+[addresses]
+b = "0xb0"

@@ -1,0 +1,34 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "simulacrum"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+bcs.workspace = true
+fastcrypto.workspace = true
+futures.workspace = true
+move-binary-format.workspace = true
+move-core-types.workspace = true
+once_cell.workspace = true
+prometheus.workspace = true
+rand.workspace = true
+serde.workspace = true
+tracing.workspace = true
+
+move-bytecode-utils.workspace = true
+shared-crypto.workspace = true
+sui-config.workspace = true
+sui-execution.workspace = true
+sui-framework.workspace = true
+sui-genesis-builder.workspace = true
+sui-keys.workspace = true
+sui-protocol-config.workspace = true
+sui-storage.workspace = true
+sui-swarm-config.workspace = true
+sui-transaction-checks.workspace = true
+sui-types.workspace = true

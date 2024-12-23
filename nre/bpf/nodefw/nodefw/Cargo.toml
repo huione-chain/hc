@@ -1,0 +1,64 @@
+[package]
+edition = "2021"
+name = "nodefw"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.6.6", default-features = false, features = [
+  "form",
+  "headers",
+  "http1",
+  "http2",
+  "json",
+  "matched-path",
+  "original-uri",
+  "query",
+  "tokio",
+] }
+axum-server = { version = "0.5.1", default-features = false, features = [
+  "tls-rustls",
+] }
+aya = { git = "https://github.com/aya-rs/aya", features = ["async_tokio"] }
+aya-log = { git = "https://github.com/aya-rs/aya" }
+clap = { version = "4.1", features = ["derive"] }
+env_logger = "0.10"
+http-body = "0.4.5"
+libc = "0.2"
+log = "0.4"
+nix = { version = "0.27.1", features = ["time"] }
+nodefw-common = { path = "../nodefw-common", features = ["user"] }
+serde = { version = "1.0.144", features = ["derive", "rc"] }
+serde_json = { version = "1.0.95", features = [
+  "arbitrary_precision",
+  "preserve_order",
+] }
+tokio = { version = "1.25", features = [
+  "macros",
+  "net",
+  "rt",
+  "rt-multi-thread",
+  "signal",
+  "time",
+] }
+tokio-util = "0.7.10"
+tower = { version = "0.4.12", features = [
+  "full",
+  "limit",
+  "load-shed",
+  "timeout",
+  "util",
+] }
+tower-http = { version = "0.3.4", features = [
+  "cors",
+  "full",
+  "propagate-header",
+  "set-header",
+  "trace",
+] }
+tracing = "0.1.37"
+
+[[bin]]
+name = "nodefw"
+path = "src/main.rs"

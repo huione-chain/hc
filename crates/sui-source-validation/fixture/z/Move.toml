@@ -1,0 +1,10 @@
+[package]
+name = "z"
+published-at = "$STORAGE_ID"
+version = "0.0.1"
+
+[dependencies]
+Sui = { local = "$REPO_ROOT/crates/sui-framework/packages/sui-framework" }
+
+[addresses]
+z = "$RUNTIME_ID"

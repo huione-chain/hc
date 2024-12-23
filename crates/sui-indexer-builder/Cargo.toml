@@ -1,0 +1,27 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "sui-indexer-builder"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+mysten-metrics.workspace = true
+prometheus.workspace = true
+sui-data-ingestion-core.workspace = true
+sui-sdk.workspace = true
+sui-types.workspace = true
+tap.workspace = true
+telemetry-subscribers.workspace = true
+tokio = { workspace = true, features = ["full"] }
+tracing.workspace = true
+
+[dev-dependencies]
+sui-indexer-builder = { workspace = true, features = ["test-utils"] }
+
+[features]
+test-utils = []

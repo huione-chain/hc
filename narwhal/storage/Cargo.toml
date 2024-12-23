@@ -1,0 +1,29 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "narwhal-storage"
+publish = false
+version = "0.1.0"
+
+
+[dependencies]
+config = { path = "../config", package = "narwhal-config" }
+fastcrypto.workspace = true
+fastcrypto-tbls.workspace = true
+futures.workspace = true
+lru.workspace = true
+mysten-common.workspace = true
+mysten-metrics.workspace = true
+parking_lot.workspace = true
+prometheus.workspace = true
+store = { path = "../../crates/typed-store", package = "typed-store" }
+sui-macros.workspace = true
+tap.workspace = true
+tempfile.workspace = true
+tokio = { workspace = true, features = ["macros", "rt", "sync"] }
+tracing.workspace = true
+types = { path = "../types", package = "narwhal-types" }
+
+[dev-dependencies]
+test-utils = { path = "../test-utils", package = "narwhal-test-utils" }

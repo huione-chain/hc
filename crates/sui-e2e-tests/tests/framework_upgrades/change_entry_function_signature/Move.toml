@@ -1,0 +1,12 @@
+[package]
+edition = "2024.beta"
+name = "SuiExtraChangeEntryFunctionSignature"
+version = "0.0.1"
+
+[dependencies]
+MoveStdlib = { local = "../../../../sui-framework/packages/move-stdlib" }
+Sui = { local = "../../../../sui-framework/packages/sui-framework" }
+SuiSystem = { local = "../../../../sui-framework/packages/sui-system" }
+
+[addresses]
+sui_system = "0x3"

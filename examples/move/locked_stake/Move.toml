@@ -1,0 +1,11 @@
+[package]
+edition = "2024.beta"
+name = "Locked Stake"
+version = "0.0.1"
+
+[dependencies]
+Sui = { local = "../../../crates/sui-framework/packages/sui-framework" }
+SuiSystem = { local = "../../../crates/sui-framework/packages/sui-system" }
+
+[addresses]
+locked_stake = "0x0"

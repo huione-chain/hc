@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "move_registry"
+
+[dependencies]
+Sui = { local = "../../../../sui-framework/packages/sui-framework" }
+
+[addresses]
+move_registry = "0x0"

@@ -1,0 +1,11 @@
+[package]
+edition = "2024.beta"
+name = "nft_rental"
+version = "0.0.1"
+
+[dependencies]
+Kiosk = { git = "https://github.com/MystenLabs/apps.git", subdir = "kiosk", rev = "testnet" }
+Sui = { local = "../../../crates/sui-framework/packages/sui-framework", override = true }
+
+[addresses]
+nft_rental = "0x0"

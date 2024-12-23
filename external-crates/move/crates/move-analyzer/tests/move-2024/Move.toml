@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "Move2024"
+
+[dependencies]
+MoveStdlib = { local = "../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
+
+[addresses]
+Move2024 = "0xCAFE"

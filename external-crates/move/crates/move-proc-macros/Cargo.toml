@@ -1,0 +1,15 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "move-proc-macros"
+publish = false
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+enum-compat-util.workspace = true
+quote.workspace = true
+syn = { version = "2", features = ["extra-traits", "fold", "full"] }

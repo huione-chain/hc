@@ -1,0 +1,9 @@
+[package]
+edition = "2024.beta"
+name = "build_include_exclude_stdlib"
+
+[addresses]
+std = "0x1"
+
+[dev-dependencies]
+MoveStdlib = { local = "../../../../move-stdlib" }

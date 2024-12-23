@@ -1,0 +1,4 @@
+[package]
+edition = "2024.beta"
+name = "A"
+version = "0.0.1"

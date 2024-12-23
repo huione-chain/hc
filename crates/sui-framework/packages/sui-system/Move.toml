@@ -1,0 +1,12 @@
+[package]
+edition = "2024.beta"
+name = "SuiSystem"
+published-at = "0x3"
+version = "0.0.1"
+
+[dependencies]
+MoveStdlib = { local = "../move-stdlib" }
+Sui = { local = "../sui-framework" }
+
+[addresses]
+sui_system = "0x3"

@@ -1,0 +1,11 @@
+[package]
+edition = "2024.beta"
+name = "CustomPropertiesInManifestEnsurePublishedAt"
+version = "0.0.0"
+
+[dependencies]
+CustomPropertiesInManifestDependencyInvalidPublishedAt = { local = "../custom_properties_in_manifest_dependency_invalid_published_at" }
+CustomPropertiesInManifestDependencyMissingPublishedAt = { local = "../custom_properties_in_manifest_dependency_missing_published_at" }
+
+[addresses]
+main = "0x0"

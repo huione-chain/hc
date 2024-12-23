@@ -1,0 +1,29 @@
+[package]
+authors = ["Brandon Williams <brandon@mystenlabs.com>"]
+description = "Mysten's network tooling"
+edition = "2021"
+license = "Apache-2.0"
+name = "mysten-network"
+publish = false
+version = "0.2.0"
+
+[dependencies]
+anemo.workspace = true
+bcs.workspace = true
+bytes.workspace = true
+eyre.workspace = true
+futures.workspace = true
+http.workspace = true
+hyper-util.workspace = true
+multiaddr.workspace = true
+once_cell.workspace = true
+pin-project-lite = "0.2.13"
+serde.workspace = true
+snap.workspace = true
+tokio = { workspace = true, features = ["macros", "rt", "sync"] }
+tokio-stream.workspace = true
+tonic.workspace = true
+tonic-health.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+tracing.workspace = true

@@ -1,0 +1,7 @@
+[package]
+name = "Root"
+
+[dependencies]
+More = { local = "./deps_only/more" }
+Nested = { local = "./deps_only/nested" }
+Shared = { local = "./deps_only/shared", override = true }

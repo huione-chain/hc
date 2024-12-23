@@ -1,0 +1,15 @@
+[package]
+authors = ["Mysten Labs <build@mystenlabs.com>"]
+edition = "2021"
+name = "service-boilerplate"
+publish = false
+version = "0.0.1"
+
+[dependencies]
+anyhow.workspace = true
+axum.workspace = true
+mysten-service.workspace = true
+prometheus.workspace = true
+serde = { workspace = true, features = ["derive"] }
+tokio = { workspace = true, features = ["full"] }
+tracing.workspace = true

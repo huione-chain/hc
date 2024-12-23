@@ -1,0 +1,12 @@
+[package]
+name = "Root"
+
+[addresses]
+A = "0x1"
+B = "_"
+
+[dev-addresses]
+B = "0x1"
+
+[dev-dependencies]
+A = { local = "./deps_only/A" }
